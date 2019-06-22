@@ -83,4 +83,7 @@ css: [
     '~/assets/styles/main.css'
   ],
 ```
-
+### More on...
+Flexbox: https://academind.com/learn/css/understanding-css/flexbox-basics-container/  
+Routing in Nuxt: https://nuxtjs.org/guide/routing  
+Views and Layout: https://nuxtjs.org/guide/views  
