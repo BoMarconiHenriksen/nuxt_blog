@@ -66,6 +66,8 @@ If there is a nested route you need to add there also.
 ### Adding a Default Error Page
 In the layouts folder add an ```error.vue``` file.  
 It's a reserved name and will be load everytime the app througs an error like 404.  
-
+### Working with Components
+Components render as part of a page.  
+Create a header component in the components folder.  
 
 
