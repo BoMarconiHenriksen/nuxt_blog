@@ -37,4 +37,16 @@ export default {
 </script>
 ```
 ### Validating Parameters
+Pages is loaded as root pages for a given url and components is used as normal building blocks.  
+Nuxt offer route validation.  
+```
+<script>
+export default {
+    validate(data) {
+        // Returns true if it's a number
+        return /^\d+$/.test(data.params.id)
+    }
+}
+</script>
+```
 
