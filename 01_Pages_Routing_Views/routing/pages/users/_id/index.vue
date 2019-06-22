@@ -7,6 +7,7 @@ export default {
     validate(data) {
         // Returns true if it's a number
         return /^\d+$/.test(data.params.id)
-    }
+    },
+    layout: 'users'
 }
 </script>
