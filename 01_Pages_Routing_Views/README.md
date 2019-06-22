@@ -69,5 +69,18 @@ It's a reserved name and will be load everytime the app througs an error like 40
 ### Working with Components
 Components render as part of a page.  
 Create a header component in the components folder.  
+### Styling a Nuxt App
+When using scoped in a styling tag in a component ensures that the styling only is for that component.  
+```
+<style scoped>
 
+</style>
+```
+For global styles create a styles folder in the assets folder.  
+In the nuxt.config.js file you can set that the main.css file should be loaded for all files in the global css property. It's an array that takes a path.  
+```
+css: [
+    '~/assets/styles/main.css'
+  ],
+```
 
