@@ -49,4 +49,8 @@ export default {
 }
 </script>
 ```
+### Creating Nested Routes
+In the folder where the users folder is create a file called users.vue  
+Use ```<nuxt-child />```  
+https://github.com/BoMarconiHenriksen/nuxt_blog/tree/master/01_Pages_Routing_Views/routing/pages/users  
 
