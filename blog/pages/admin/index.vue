@@ -5,7 +5,7 @@
         </section>
         <section class="exitsing-posts">
             <h1>Exising Posts</h1>
-            <PostList />
+            <PostList isAdmin />
         </section>
     </div>
 </template>
