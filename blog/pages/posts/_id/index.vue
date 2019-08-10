@@ -18,8 +18,12 @@
 export default {
   // Return the page after it has fetched the data from a server.
     asyncData(context, callback) {
+        // Error handling with promise.
+        return new Promes().catch(e => {
+          context.error(new Error())
+        })
         setTimeout(() => {
-        callback(null, {
+        callback(new Error(), {
             loadedPost: 
             {
             id: '1', 
