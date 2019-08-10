@@ -11,39 +11,10 @@ export default {
     components: {
         PostList
     },
-    // Return the page after it has fetched the data from a server.
-    asyncData(context) {
-        // Error handling with promise.
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve({
-                    loadedPosts: [
-                    {
-                    id: '1', 
-                    title: 'Our First Post', 
-                    previewText: 'This is our first post!', 
-                    thumbnailLink: 'https://images.unsplash.com/photo-1556740714-a8395b3bf30f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
-                    },
-                    {
-                    id: '2', 
-                    title: 'Our Second Post', 
-                    previewText: 'This is our second post!', 
-                    thumbnailLink: 'https://images.unsplash.com/photo-1556740714-a8395b3bf30f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
-                    }
-                    ]
-                })
-            }, 1500);
-            // reject(new Error())
-        })
-        .then(data => {
-            return data
-        })
-        .catch(e => {
-          context.error(e)
-        });
-    },
-    created() {
-        this.$store.dispatch('setPosts', this.loadedPosts);
+    computed: {
+        loadedPosts() {
+            return this.$store.getters.loadedPosts;
+        }
     }
 };
 </script>
